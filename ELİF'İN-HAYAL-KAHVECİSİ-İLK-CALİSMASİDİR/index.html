@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahve Dükkanı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="home" class="home-section">
+      <div class="home-content">
+          <h1>Hoşgeldiniz!</h1>
+          <p>Bir fincan kahveyle rahatlayın, şehrin en iyi lezzetlerini keşfedin.</p>
+          <a href="#gallery" class="continue-href">Devamını İncele</a>
+      </div>
+  </section>
+
+    <!-- NAVBAR -->
+    <nav>
+     <div class="container">
+       <div class="logo"><a href="#home">HOŞGELDİNİZ</a></div>
+         <ul>
+             <li><a href="#about">Hakkımızda</a></li>
+             <li>||</li>
+             <li><a href="#menu">Menü</a></li>
+             <li>||</li>
+             <li><a href="#contact">İletişim</a></li>
+             <li>||</li>
+             <li><a href="#reserve">Rezervasyon</a></li>
+         </ul>
+     </div>
+ </nav>
+
+    <!-- HEADER (Parallax) -->
+    <header class="parallax">
+        <h1>Hoş Geldiniz</h1>
+        <p>Kahve tutkunlari için özel lezzetler</p>
+    </header>
+
+
+
+    <section class="cards">
+        <div class="card animation">
+            <h3>Frappeler</h3>
+            <p>Bu alanda kart içeriği yer alacak. Lorem ipsum dolor sit amet.</p>
+            <img src="images/frappe.jpg" alt="">
+        </div>
+        <div class="card animation">
+            <h3>Soğuk İcecekler</h3>
+            <p>Bu alanda kart içeriği yer alacak. Lorem ipsum dolor sit amet.</p>
+            <img src="images/bubble-tea.jpg" alt="">
+        </div>
+        <div class="card animation">
+            <h3>Sicak Icecekler</h3>
+            <p>Bu alanda kart içeriği yer alacak. Lorem ipsum dolor sit amet.</p>
+            <img src="images/americano.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="gallery">
+       <a href="#gallery"><h2>Fotoğraf Galerisi</h2></a>
+        <div class="  grid-container">
+            <div class="grid-item">
+                <img src="images/coffe_bar.jpg" alt="Resim 1">
+                <div class="text">Resim 1</div>
+            </div>
+            <div class="grid-item ">
+                <img src="images/coffee_Art1.jpg" alt="Resim 2">
+                <div class="text">Resim 2</div>
+            </div>
+            <div class="grid-item ">
+                <img src="images/coffee_self.jpg" alt="Resim 3">
+                <div class="text">Resim 3</div>
+            </div>
+            <div class="grid-item ">
+                <img src="images/kahveci_bar.jpg" alt="Resim 4">
+                <div class="text">Resim 4</div>
+            </div>
+            <div class="grid-item">
+                <img src="images/coffee_study2.jpg" alt="Resim 5">
+                <div class="text">Resim 5</div>
+            </div>
+            <div class="grid-item ">
+                <img src="images/deserts.jpg" alt="Resim 6">
+                <div class="text">Resim 6</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for displaying larger image -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-img" class="modal-content">
+        <div id="caption"></div>
+    </div>
+
+    <section id="reviews">
+        <h2>Müşteri Yorumları</h2>
+        <div class="review-container">
+            <div class="review">
+                <p><span class="quote">&ldquo;</span>"Bu kafenin atmosferi harika!
+                    Çalışma ortamı çok rahat ve sakin."<span class="quote">&rdquo;</span> <br> -
+                    <strong>Ayşe Y.</strong>
+                </p>
+            </div>
+            <div class="review">
+                <p><span class="quote">&ldquo;</span>"Kahveleri mükemmel!
+                    Güleryüzlü personel ve hızlı servis." <span class="quote">&rdquo;</span> <br> -
+                    <strong>Mehmet K.</strong>
+                </p>
+            </div>
+            <div class="review">
+                <p><span class="quote">&ldquo;</span>"Güncel menüler ve lezzetli tatlar,
+                    kesinlikle tavsiye ederim." <span class="quote">&rdquo;</span> <br>- <strong>Elif P.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Hakkımızda</h2>
+        <p>Biz, kahve tutkunlarının bir araya geldiği sıcak ve samimi bir atmosfer sunan bir kafeyiz.
+            Müşterilerimize en kaliteli kahveleri ve lezzetli atıştırmalıkları sunarken, her zaman
+            rahat ve huzurlu bir ortam yaratmaya özen gösteriyoruz.</p>
+        <a href="#more-about" class="continue-link">Devam Et </a>
+    </section>
+
+    <section id="contact">
+        <h2>Bizimle İletişime Geçin</h2>
+        <p>Rezervasyon yapmak veya herhangi bir sorunuz için bizimle iletişime geçebilirsiniz. Size en kısa sürede geri
+            dönüş yapacağız.</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" placeholder="Mesajınızı yazın" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Gönder</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Tüm Hakları Saklıdır.</p>
+    </footer>
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
